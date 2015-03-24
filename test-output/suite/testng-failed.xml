@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [suite]">
+  <parameter name="selenium.url" value="http://www.linkedin.com"/>
+  <parameter name="selenium.browser" value="saucelab"/>
+  <parameter name="workbook.path" value="XSLS\LinkedIn_Test_Cases.xlsx"/>
+  <parameter name="project.title" value="LinkedIn-SignIn"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="testsheet.name" value="SignIn"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test name="Verify_Register_Page(failed)">
+    <parameter name="selenium.browser" value="saucelab"/>
+    <classes>
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="verifyRegisterPage"/>
+          <include name="tearDown"/>
+          <include name="getTestInfo"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </classes>
+  </test> <!-- Verify_Register_Page(failed) -->
+</suite> <!-- Failed suite [suite] -->
