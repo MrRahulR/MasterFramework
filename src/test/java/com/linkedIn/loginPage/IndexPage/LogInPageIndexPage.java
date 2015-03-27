@@ -2,7 +2,9 @@ package com.linkedIn.loginPage.IndexPage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -58,8 +60,6 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void verify_Register_Page() {
 
-		logstep = 1;
-
 		extent.log(LogStatus.INFO,
 				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
@@ -80,7 +80,7 @@ public class LogInPageIndexPage extends AbstractPage {
 		common.pause(1);
 
 		loginPageVerfication.verificationMethod(joinNow_button,
-				"Verify \"Sign In\" button");
+				"Verify \"Join Now\" button");
 
 		common.pause(1);
 
@@ -88,14 +88,12 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void verify_Label_in_Page() {
 
-		logstep = 1;
-
-		common.logstep("Step: " + (logstep++)
-				+ "  <a href=\"http://www.linkedin.com\"> Open URL </a>");
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++) + " Observe labels of page");
+		extent.log(LogStatus.INFO, " Observe labels of page");
 
 		common.pause(2);
 
@@ -112,15 +110,12 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void verify_Mendatory_Fields() {
 
-		logstep = 1;
-
-		common.logstep("Step: " + (logstep++)
-				+ "  <a href=\"http://www.linkedin.com\"> Open URL </a>");
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++)
-				+ " Observe mendatory fields for registration");
+		extent.log(LogStatus.INFO, "Observe mendatory fields for registration");
 
 		common.pause(2);
 
@@ -148,14 +143,12 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void verify_JoinNow_Button() {
 
-		logstep = 1;
-
-		common.logstep("Step: " + (logstep++)
-				+ "  <a href=\"http://www.linkedin.com\"> Open URL </a>");
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++) + " Verify \"Join Now\" button");
+		extent.log(LogStatus.INFO, " Verify \"Join Now\" button");
 
 		common.pause(2);
 
@@ -168,19 +161,20 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void click_JoinNow_Button() {
 
-		logstep = 1;
-
-		common.logstep("Step: " + (logstep++)
-				+ "  <a href=\"http://www.linkedin.com\"> Open URL </a>");
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++) + " Click \"Join Now\" button");
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
 
 		common.pause(2);
 
-		common.highlightsElement(joinNow_button);
-		joinNow_button.click();
+		try {
+			joinNow_button.click();
+		} catch (NoSuchElementException nse) {
+
+		}
 
 		common.pause(2);
 
@@ -193,14 +187,12 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	public void textbox_Edit_Functionality() {
 
-		logstep = 1;
-
-		common.logstep("Step: " + (logstep++)
-				+ "  <a href=\"http://www.linkedin.com\"> Open URL </a>");
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++) + " Enter values in text fields");
+		extent.log(LogStatus.INFO, " Enter values in text fields");
 
 		common.pause(1);
 
@@ -208,16 +200,71 @@ public class LogInPageIndexPage extends AbstractPage {
 
 		common.pause(1);
 
-		common.logstep("Step: " + (logstep++) + " Observe value in text fields");
+		extent.log(LogStatus.INFO, " Observe value in text fields");
 
 		common.pause(1);
 
 		if (getValuesTextfields().equals("Editable")) {
 
-			common.log("Textfields are editable");
+			extent.log(LogStatus.INFO, "All textfields are editable");
 		}
 
 		common.pause(1);
+
+	}
+
+	public void verify_firstname(String name) {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		String first_name = name;
+
+		common.pause(2);
+
+		firstName_text.sendKeys(first_name);
+
+		extent.log(LogStatus.INFO, "Enter First Name: <strong><em>"
+				+ first_name + "");
+
+		common.pause(2);
+
+		String last_name = CreatRandomNames(5);
+
+		lastName_text.sendKeys(last_name);
+
+		extent.log(LogStatus.INFO, "Enter Last Name: <strong><em>" + last_name
+				+ "");
+
+		common.pause(2);
+
+		String email = createRandommail(7);
+
+		emailId_text.sendKeys(email);
+
+		extent.log(LogStatus.INFO, "Enter Emailid : <strong><em>" + email + "");
+
+		common.pause(2);
+
+		String password = CreateRandomPassword();
+
+		passwd_text.sendKeys(password);
+
+		extent.log(LogStatus.INFO, "Enter Password : <strong><em>" + password
+				+ "");
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		joinNow_button.click();
+
+		common.pause(2);
+
+		loginPageVerfication.verificationMethod(validation_message,
+				"Verification message is verify.");
+
+		common.pause(2);
 
 	}
 
@@ -260,4 +307,46 @@ public class LogInPageIndexPage extends AbstractPage {
 		return value;
 	}
 
+	public void Click(WebElement element) {
+
+		try {
+
+			element.click();
+
+		} catch (Exception e) {
+
+			// e.printStackTrace();
+			extent.log(LogStatus.FAIL, "Click on " + element.getText()
+					+ "failed");
+		}
+	}
+
+	public String createRandommail(int number) {
+
+		StringBuffer smail = new StringBuffer();
+		smail.append(RandomStringUtils.randomAlphabetic(number)
+				+ "@mailinator.com");
+
+		String mail = smail.toString();
+
+		common.pause(2);
+
+		return mail;
+	}
+
+	public String CreatRandomNames(int number) {
+
+		String name = RandomStringUtils.randomAlphabetic(number);
+
+		return name;
+	}
+
+	public String CreateRandomPassword() {
+		String password;
+
+		password = CreatRandomNames(4) + "@"
+				+ common.randomNumericValueGenerate(3);
+
+		return password;
+	}
 }

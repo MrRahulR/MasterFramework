@@ -61,7 +61,7 @@ public class Common {
 	protected static String string_start_date;
 	protected static String string_end_date;
 	protected static String string_diff_time;
-	
+
 	public String Path = System.getProperty("user.dir");
 
 	public Common(WebDriver driver) {
@@ -1181,27 +1181,24 @@ public class Common {
 		}
 	}
 
-	/*public void createTestChart(int total, int pass, int fail, int skip) {
-
-		DefaultPieDataset dataset = new DefaultPieDataset();
-		dataset.setValue("Total Tests", total);
-		dataset.setValue("Pass Tests", pass);
-		dataset.setValue("Fail Tests", fail);
-		dataset.setValue("Skip Tests", skip);
-
-		JFreeChart chart = ChartFactory.createPieChart("LinkedIn Test Result",
-				dataset, true, true, false);
-
-		int width = 640;
-		int height = 480;
-		File pieChart = new File(Path+"\\test-output\\PieResult.jpeg");
-		try {
-			ChartUtilities.saveChartAsJPEG(pieChart, chart, width, height);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	}*/
+	/*
+	 * public void createTestChart(int total, int pass, int fail, int skip) {
+	 * 
+	 * DefaultPieDataset dataset = new DefaultPieDataset();
+	 * dataset.setValue("Total Tests", total); dataset.setValue("Pass Tests",
+	 * pass); dataset.setValue("Fail Tests", fail);
+	 * dataset.setValue("Skip Tests", skip);
+	 * 
+	 * JFreeChart chart = ChartFactory.createPieChart("LinkedIn Test Result",
+	 * dataset, true, true, false);
+	 * 
+	 * int width = 640; int height = 480; File pieChart = new
+	 * File(Path+"\\test-output\\PieResult.jpeg"); try {
+	 * ChartUtilities.saveChartAsJPEG(pieChart, chart, width, height); } catch
+	 * (IOException e) { // TODO Auto-generated catch block e.printStackTrace();
+	 * }
+	 * 
+	 * }
+	 */
 
 }

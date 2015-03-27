@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="suite" verbose="10" parallel="false">
+<suite name="suite" verbose="10" parallel="false" thread-count="2">
 
 	<!-- Put IP of localhost/Grid Hub machine -->
 	<parameter name="selenium.host" value="localhost" />
@@ -16,7 +16,7 @@
 	<parameter name="project.title" value="LinkedIn-SignIn" />
 
 	<test name="Verify_Register_Page">
-	    <parameter name="selenium.browser" value="saucelab" />
+	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -27,8 +27,8 @@
 	</test>
 
 
-	<!-- <test name="Verify_Label_onPage">
-	    <parameter name="selenium.browser" value="saucelab" />
+	<test name="Verify_Label_onPage">
+	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -39,7 +39,7 @@
 	</test>
 
 	<test name="Verify_Mendatory_Fields">
-	    <parameter name="selenium.browser" value="saucelab" />
+	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -50,7 +50,7 @@
 	</test>
 
  	<test name="Verify_Button_Functionality">
- 	    <parameter name="selenium.browser" value="saucelab" />
+ 	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -61,7 +61,7 @@
 	</test>
 
 	<test name="Click_Button_Functionality">
-	    <parameter name="selenium.browser" value="saucelab" />
+	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -72,7 +72,7 @@
 	</test>
 
 	<test name="Textbox_Edit_Functionality">
-	    <parameter name="selenium.browser" value="saucelab" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -81,10 +81,11 @@
 			</class>
 		</classes>
 	</test>
- -->
-<!-- 	<test name="Invalid_FirstName">
+
+	<test name="Invalid_FirstName">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="invalidFirstname" />
 				</methods>
@@ -92,7 +93,7 @@
 		</classes>
 	</test>
 
-	<test name="Invalid_LastName">
+<!-- 	<test name="Invalid_LastName">
 		<classes>
 			<class name="com.intgrated.cases.CreateNewAccount">
 				<methods>

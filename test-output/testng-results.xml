@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
     <line>
       <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
@@ -7,17 +7,67 @@
     <line>
       <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
     </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+    </line>
+    <line>
+      <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+    </line>
   </reporter-output>
-  <suite name="suite" duration-ms="24301" started-at="2015-03-24T07:15:40Z" finished-at="2015-03-24T07:16:04Z">
+  <suite name="suite" duration-ms="286223" started-at="2015-03-27T11:09:22Z" finished-at="2015-03-27T11:14:08Z">
     <groups>
     </groups>
-    <test name="Verify_Register_Page" duration-ms="24301" started-at="2015-03-24T07:15:40Z" finished-at="2015-03-24T07:16:04Z">
+    <test name="Verify_Register_Page" duration-ms="18345" started-at="2015-03-27T11:09:22Z" finished-at="2015-03-27T11:09:40Z">
       <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
-        <test-method status="PASS" signature="getTestInfo()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6]" name="getTestInfo" is-config="true" duration-ms="15" started-at="2015-03-24T12:45:40Z" finished-at="2015-03-24T12:45:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTestInfo -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6]" name="setUp" is-config="true" duration-ms="12797" started-at="2015-03-24T12:45:40Z" finished-at="2015-03-24T12:45:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@ba3b30]" name="setUp" is-config="true" duration-ms="9796" started-at="2015-03-27T16:39:22Z" finished-at="2015-03-27T16:39:32Z">
           <params>
             <param index="0">
               <value>
@@ -28,26 +78,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-24T12:45:40Z" finished-at="2015-03-24T12:45:40Z">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@ba3b30]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:39:22Z" finished-at="2015-03-27T16:39:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1612a4c]]>
+                <![CDATA[org.testng.TestRunner@42edff]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchSuiteConfiguration -->
-        <test-method status="PASS" signature="verifyRegisterPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6]" name="verifyRegisterPage" duration-ms="9674" started-at="2015-03-24T12:45:53Z" finished-at="2015-03-24T12:46:03Z">
+        <test-method status="PASS" signature="verifyRegisterPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@ba3b30]" name="verifyRegisterPage" duration-ms="7057" started-at="2015-03-27T16:39:32Z" finished-at="2015-03-27T16:39:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6]" name="tearDown" is-config="true" duration-ms="1830" started-at="2015-03-24T12:46:03Z" finished-at="2015-03-24T12:46:04Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@ba3b30]" name="tearDown" is-config="true" duration-ms="1492" started-at="2015-03-27T16:39:39Z" finished-at="2015-03-27T16:39:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyRegisterPage status=SUCCESS method=LoginPageIndex.verifyRegisterPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@a2f9e6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyRegisterPage status=SUCCESS method=LoginPageIndex.verifyRegisterPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@ba3b30] output={null}]]]>
               </value>
             </param>
           </params>
@@ -62,5 +112,442 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
     </test> <!-- Verify_Register_Page -->
+    <test name="Verify_Label_onPage" duration-ms="16487" started-at="2015-03-27T11:09:40Z" finished-at="2015-03-27T11:09:57Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1c5ab93]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:39:40Z" finished-at="2015-03-27T16:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e67c1e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1c5ab93]" name="setUp" is-config="true" duration-ms="9715" started-at="2015-03-27T16:39:40Z" finished-at="2015-03-27T16:39:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.verifyLabelinPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLabelinPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1c5ab93]" name="verifyLabelinPage" duration-ms="5391" started-at="2015-03-27T16:39:50Z" finished-at="2015-03-27T16:39:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLabelinPage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1c5ab93]" name="tearDown" is-config="true" duration-ms="1376" started-at="2015-03-27T16:39:55Z" finished-at="2015-03-27T16:39:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLabelinPage status=SUCCESS method=LoginPageIndex.verifyLabelinPage()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1c5ab93] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Verify_Label_onPage -->
+    <test name="Verify_Mendatory_Fields" duration-ms="18169" started-at="2015-03-27T11:09:57Z" finished-at="2015-03-27T11:10:15Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@18b41da]" name="setUp" is-config="true" duration-ms="9164" started-at="2015-03-27T16:39:57Z" finished-at="2015-03-27T16:40:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.verifyMendatoryFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@18b41da]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:39:57Z" finished-at="2015-03-27T16:39:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1debd03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="verifyMendatoryFields()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@18b41da]" name="verifyMendatoryFields" duration-ms="7567" started-at="2015-03-27T16:40:06Z" finished-at="2015-03-27T16:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMendatoryFields -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@18b41da]" name="tearDown" is-config="true" duration-ms="1438" started-at="2015-03-27T16:40:13Z" finished-at="2015-03-27T16:40:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMendatoryFields status=SUCCESS method=LoginPageIndex.verifyMendatoryFields()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@18b41da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Verify_Mendatory_Fields -->
+    <test name="Verify_Button_Functionality" duration-ms="15702" started-at="2015-03-27T11:10:15Z" finished-at="2015-03-27T11:10:31Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@3f983f]" name="setUp" is-config="true" duration-ms="10092" started-at="2015-03-27T16:40:15Z" finished-at="2015-03-27T16:40:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.verifyJoinnowButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@3f983f]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:40:15Z" finished-at="2015-03-27T16:40:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b2882]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="verifyJoinnowButton()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@3f983f]" name="verifyJoinnowButton" duration-ms="4192" started-at="2015-03-27T16:40:25Z" finished-at="2015-03-27T16:40:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyJoinnowButton -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@3f983f]" name="tearDown" is-config="true" duration-ms="1418" started-at="2015-03-27T16:40:29Z" finished-at="2015-03-27T16:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyJoinnowButton status=SUCCESS method=LoginPageIndex.verifyJoinnowButton()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@3f983f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Verify_Button_Functionality -->
+    <test name="Click_Button_Functionality" duration-ms="17324" started-at="2015-03-27T11:10:31Z" finished-at="2015-03-27T11:10:48Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1e3bd51]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:40:31Z" finished-at="2015-03-27T16:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5093e2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1e3bd51]" name="setUp" is-config="true" duration-ms="8583" started-at="2015-03-27T16:40:31Z" finished-at="2015-03-27T16:40:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.clickJoinnowButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickJoinnowButton()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1e3bd51]" name="clickJoinnowButton" duration-ms="7274" started-at="2015-03-27T16:40:39Z" finished-at="2015-03-27T16:40:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickJoinnowButton -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1e3bd51]" name="tearDown" is-config="true" duration-ms="1466" started-at="2015-03-27T16:40:46Z" finished-at="2015-03-27T16:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickJoinnowButton status=SUCCESS method=LoginPageIndex.clickJoinnowButton()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1e3bd51] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Click_Button_Functionality -->
+    <test name="Textbox_Edit_Functionality" duration-ms="35754" started-at="2015-03-27T11:10:48Z" finished-at="2015-03-27T11:11:24Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1d66c39]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:40:48Z" finished-at="2015-03-27T16:40:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1cfa64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1d66c39]" name="setUp" is-config="true" duration-ms="8582" started-at="2015-03-27T16:40:48Z" finished-at="2015-03-27T16:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.textboxEditFunctionality()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="textboxEditFunctionality()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1d66c39]" name="textboxEditFunctionality" duration-ms="25809" started-at="2015-03-27T16:40:57Z" finished-at="2015-03-27T16:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textboxEditFunctionality -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1d66c39]" name="tearDown" is-config="true" duration-ms="1363" started-at="2015-03-27T16:41:22Z" finished-at="2015-03-27T16:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=textboxEditFunctionality status=SUCCESS method=LoginPageIndex.textboxEditFunctionality()[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@1d66c39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Textbox_Edit_Functionality -->
+    <test name="Invalid_FirstName" duration-ms="164264" started-at="2015-03-27T11:11:24Z" finished-at="2015-03-27T11:14:08Z">
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <test-method status="PASS" signature="getTestInfo(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="getTestInfo" is-config="true" duration-ms="47" started-at="2015-03-27T16:39:22Z" finished-at="2015-03-27T16:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7ac9a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestInfo -->
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2015-03-27T16:41:24Z" finished-at="2015-03-27T16:41:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7ac9a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="setUp" is-config="true" duration-ms="8450" started-at="2015-03-27T16:41:24Z" finished-at="2015-03-27T16:41:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.invalidFirstname(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="invalidFirstname" duration-ms="18674" started-at="2015-03-27T16:41:32Z" data-provider="invalidnames" finished-at="2015-03-27T16:41:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidFirstname -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="tearDown" is-config="true" duration-ms="1355" started-at="2015-03-27T16:41:51Z" finished-at="2015-03-27T16:41:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidFirstname status=SUCCESS method=LoginPageIndex.invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="setUp" is-config="true" duration-ms="9110" started-at="2015-03-27T16:41:52Z" finished-at="2015-03-27T16:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.invalidFirstname(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="invalidFirstname" duration-ms="32350" started-at="2015-03-27T16:42:01Z" data-provider="invalidnames" finished-at="2015-03-27T16:42:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ Rahul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidFirstname -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="tearDown" is-config="true" duration-ms="1455" started-at="2015-03-27T16:42:34Z" finished-at="2015-03-27T16:42:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidFirstname status=SUCCESS method=LoginPageIndex.invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="setUp" is-config="true" duration-ms="9659" started-at="2015-03-27T16:42:35Z" finished-at="2015-03-27T16:42:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.invalidFirstname(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="invalidFirstname" duration-ms="37635" started-at="2015-03-27T16:42:45Z" data-provider="invalidnames" finished-at="2015-03-27T16:43:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[R@hu!_]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidFirstname -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="tearDown" is-config="true" duration-ms="1424" started-at="2015-03-27T16:43:22Z" finished-at="2015-03-27T16:43:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidFirstname status=SUCCESS method=LoginPageIndex.invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="setUp" is-config="true" duration-ms="10657" started-at="2015-03-27T16:43:24Z" finished-at="2015-03-27T16:43:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedIn.loginPage.Index.LoginPageIndex.invalidFirstname(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="invalidFirstname" duration-ms="32063" started-at="2015-03-27T16:43:34Z" data-provider="invalidnames" finished-at="2015-03-27T16:44:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rah Ul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidFirstname -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e]" name="tearDown" is-config="true" duration-ms="1409" started-at="2015-03-27T16:44:07Z" finished-at="2015-03-27T16:44:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidFirstname status=SUCCESS method=LoginPageIndex.invalidFirstname(java.lang.String, int)[pri:0, instance:com.linkedIn.loginPage.Index.LoginPageIndex@25502e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<h3> <font color=#00FF00> Passed--<img src="passed.png"/>--</font> </h2></br></br>]]>
+            </line>
+            <line>
+              <![CDATA[<font color=238E23>--<img src="passed.png"/></font></br></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </test> <!-- Invalid_FirstName -->
   </suite> <!-- suite -->
 </testng-results>

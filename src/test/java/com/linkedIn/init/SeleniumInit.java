@@ -30,6 +30,7 @@ import com.linkedIn.loginPage.Index.LoginPageIndex;
 import com.linkedIn.loginPage.IndexPage.LogInPageIndexPage;
 import com.linkedIn.loginPage.Verification.LoginPageVerification;
 import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * Selenium class Initialization
@@ -44,8 +45,7 @@ public class SeleniumInit implements ILoggerStatus {
 
 	public static ExtentReports extent = ExtentReports.get("FrameworkDriver");
 
-	String reportPath = System.getProperty("user.dir")
-			+ "\\Report.html";
+	String reportPath = System.getProperty("user.dir") + "\\Report.html";
 
 	public static String testUrl; // Test url
 	protected String seleniumHub; // Selenium hub IP
@@ -92,7 +92,15 @@ public class SeleniumInit implements ILoggerStatus {
 	// And many more ...
 
 	@BeforeSuite
-	public void getTestInfo() {
+	public void getTestInfo(ITestContext testContext) {
+
+		project_title = testContext.getCurrentXmlTest().getParameter(
+				"project.title");
+
+		extent.init(reportPath, true);
+		extent.config().reportHeadline("Report LinkedIn Testing.")
+				.useExtentFooter(false)
+				.documentTitle("KiwiQA | " + project_title);
 
 	}
 
@@ -101,6 +109,7 @@ public class SeleniumInit implements ILoggerStatus {
 	 * 
 	 * @param testContext
 	 */
+
 	@BeforeTest(alwaysRun = true)
 	public void fetchSuiteConfiguration(ITestContext testContext) {
 
@@ -127,9 +136,6 @@ public class SeleniumInit implements ILoggerStatus {
 		sheet_name = testContext.getCurrentXmlTest().getParameter(
 				"testsheet.name");
 
-		project_title = testContext.getCurrentXmlTest().getParameter(
-				"project.title");
-
 	}
 
 	/**
@@ -145,10 +151,11 @@ public class SeleniumInit implements ILoggerStatus {
 	public void setUp(Method method) throws IOException, InterruptedException,
 			AWTException {
 
-		extent.init(reportPath, true);
-		extent.config().reportHeadline("Report LinkedIn Testing.")
-				.useExtentFooter(false)
-				.documentTitle("KiwiQA | " + project_title);
+		/*
+		 * extent.init(reportPath, true);
+		 * extent.config().reportHeadline("Report LinkedIn Testing.")
+		 * .useExtentFooter(false) .documentTitle("KiwiQA | " + project_title);
+		 */
 
 		currentTest = method.getName(); // get Name of current test.
 
@@ -392,6 +399,12 @@ public class SeleniumInit implements ILoggerStatus {
 				common.makeScreenshot(driver, screenshotName);
 
 				common.setTestDetails(LoginPageIndex.row_num, 5, "Fail");
+
+				extent.log(LogStatus.FAIL, "Scenario Failed");
+				extent.log(LogStatus.ERROR, "Check out screenshots",
+						"Screenshot", System.getProperty("user.dir")
+								+ "\\test-output\\screenshots\\"
+								+ screenshotName + ".png");
 
 			} else {
 

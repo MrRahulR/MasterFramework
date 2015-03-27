@@ -23,10 +23,14 @@ public class LoginPageVerification extends AbstractPage {
 	public void verificationMethod(WebElement element,
 			String VerificationMessage) {
 
-		if (element.isDisplayed()) {
-			extent.log(LogStatus.PASS, VerificationMessage);
-		} else {
-			test_result = "failed";
+		try {
+			if (element.isDisplayed()) {
+				extent.log(LogStatus.PASS, VerificationMessage);
+			} else {
+				test_result = "failed";
+				extent.log(LogStatus.FAIL, VerificationMessage);
+			}
+		} catch (Exception e) {
 			extent.log(LogStatus.FAIL, VerificationMessage);
 		}
 
