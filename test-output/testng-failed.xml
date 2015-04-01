@@ -8,18 +8,38 @@
   <parameter name="selenium.port" value="4444"/>
   <parameter name="testsheet.name" value="SignIn"/>
   <parameter name="selenium.host" value="localhost"/>
-  <test name="Invalid_FirstName(failed)">
-    <parameter name="selenium.browser" value="chrome"/>
+  <test name="Invalid_LastName(failed)">
     <classes>
       <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
         <methods>
-          <include name="fetchSuiteConfiguration"/>
           <include name="tearDown"/>
-          <include name="invalidFirstname" invocation-numbers="0 1 2 3"/>
-          <include name="getTestInfo"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="getTestInfo"/>
+          <include name="invalidLastName"/>
         </methods>
       </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
     </classes>
-  </test> <!-- Invalid_FirstName(failed) -->
+  </test> <!-- Invalid_LastName(failed) -->
 </suite> <!-- Failed suite [suite] -->

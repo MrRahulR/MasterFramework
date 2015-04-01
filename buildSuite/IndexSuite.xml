@@ -26,7 +26,6 @@
 		</classes>
 	</test>
 
-
 	<test name="Verify_Label_onPage">
 	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
@@ -93,9 +92,10 @@
 		</classes>
 	</test>
 
-<!-- 	<test name="Invalid_LastName">
+	<test name="Invalid_LastName">
+	<parameter name="selenium.browser" value="chrome" />
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="invalidLastName" />
 				</methods>
@@ -104,8 +104,9 @@
 	</test>
 
 	<test name="Invalid_Emailid">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="invalid_emailid" />
 				</methods>
@@ -113,9 +114,9 @@
 		</classes>
 	</test>
 
-	<test name="Invalid_Password">
+<!-- 	<test name="Invalid_Password">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="invalid_password" />
 				</methods>
@@ -125,7 +126,7 @@
 
 	<test name="Register_Success">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="register_success" />
 				</methods>
@@ -135,7 +136,7 @@
 
 	<test name="Tab_Functionality">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="tab_functionality" />
 				</methods>
@@ -145,7 +146,7 @@
 
 	<test name="Onclick_Functionality">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="onclick_functionality" />
 				</methods>
@@ -155,7 +156,7 @@
 
 	<test name="Verify_Validation_Msg">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="verify_validation_msg" />
 				</methods>
@@ -165,7 +166,7 @@
 
 	<test name="User_Agreement_Link">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="useragreement_link" />
 				</methods>
@@ -175,7 +176,7 @@
 
 	<test name="Privacy_Policy_Link">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="privacypolicy_link" />
 				</methods>
@@ -185,7 +186,7 @@
 
 	<test name="Cookie_Policy_Link">
 		<classes>
-			<class name="com.intgrated.cases.CreateNewAccount">
+			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
 					<include name="cookiepolicy_link" />
 				</methods>

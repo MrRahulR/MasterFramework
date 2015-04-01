@@ -7,15 +7,15 @@ public class TestData {
 	@DataProvider(name = "invalidnames")
 	public static Object[][] invalidnames() {
 
-		return new Object[][] { { "",15 }, { " Rahul",16 }, { "R@hu!_",17 },
-				{ "Rah Ul",18 } };
+		return new Object[][] { { "", 15 }, { " Rahul", 16 }, { "R@hu!_", 17 },
+				{ "Rah Ul", 22 } };
 	}
 
 	@DataProvider(name = "invalidlnames")
 	public static Object[][] invalidlnames() {
 
-		return new Object[][] { { "" }, { " Rahul" }, { "R@hu!_" },
-				{ "Rah Ul" } };
+		return new Object[][] { { "", 18 }, { " Rahul", 19 }, { "R@hu!_", 20 },
+				{ "Rah Ul", 21 } };
 	}
 
 	@DataProvider(name = "invalidmailid")
@@ -23,20 +23,21 @@ public class TestData {
 
 		return new Object[][] {
 
-		{ " rahul.pandya@mailinator.com" }, { "rahul.pndya@" },
-				{ "rahul pandya@mailinator.com" },
-				{ "rahul.pandyamailinator.com" }, { "@mailinator.com" },
-				{ "rahul.pandya00@@mailinator.com" },
-				{ "rahul..pandya@mailinator.com" },
-				{ "rahul.pandya@-mailinator.com" },
-				{ "#$%^%^&%#^&*@mailinator.com" },
-				{ "Rahul Pandya <rahul.pandya@mailinator.com>" },
-				{ "rahul.pandya00@mailinator." }, { "rahul.pandya@web.net" },
-				{ "rahul.pandya@111.com" },
-				{ "rahul.pandya@mailinator.com (Rahul Pandya)" },
-				{ "rahul.pandya@mailinatorhotmail.com" },
-				{ "rahul.pandya@xyz.com" }, { "" },
-				{ "pandya.rahul00@gmail.com" }
+		{ " rahul.pandya@mailinator.com", 24 }, { "rahul.pndya@", 25 },
+				{ "rahul pandya@mailinator.com", 26 },
+				{ "rahul.pandyamailinator.com", 27 },
+				{ "@mailinator.com", 28 },
+				{ "rahul.pandya00@@mailinator.com", 29 },
+				{ "rahul..pandya@mailinator.com", 30 },
+				{ "rahul.pandya@-mailinator.com", 31 },
+				{ "#$%^%^&%#^&*@mailinator.com", 32 },
+				{ "Rahul Pandya <rahul.pandya@mailinator.com>", 33 },
+				{ "rahul.pandya00@mailinator.", 34 },
+				{ "rahul.pandya@web.net", 35 }, { "rahul.pandya@111.com", 36 },
+				{ "rahul.pandya@mailinator.com (Rahul Pandya)", 37 },
+				{ "rahul.pandya@mailinatorhotmail.com", 38 },
+				{ "rahul.pandya@xyz.com", 39 }, { "", 40 },
+				{ "pandya.rahul00@gmail.com", 41 }
 
 		};
 	}
@@ -44,9 +45,9 @@ public class TestData {
 	@DataProvider(name = "invalidpassword")
 	public static Object[][] invalidpassword() {
 
-		return new Object[][] { { "Jammmiieee" }, { "123456", 34 },
-				{ "emailid", 35 }, { "", 36 }, { "ra12@", 37 },
-				{ "rahulpa12", 38 } };
+		return new Object[][] { { "Jammmiieee", 42 }, { "123456", 43 },
+				{ "emailid", 44 }, { "", 45 }, { "ra12@", 46 },
+				{ "rahulpa12", 47 } };
 	}
 
 }

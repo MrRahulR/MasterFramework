@@ -26,8 +26,6 @@ public class LogInPageIndexPage extends AbstractPage {
 	LoginPageVerification loginPageVerfication = new LoginPageVerification(
 			driver);
 
-	static int logstep = 1;
-
 	/*----------------------- List of web elements/xpaths of page -----------------------*/
 
 	@FindBy(xpath = ".//*[@id='btn-submit']")
@@ -56,7 +54,7 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	List<WebElement> textfields = new ArrayList<WebElement>();
 
-	/*----------------------- Test excution methods  -----------------------*/
+	/*----------------------- Test execution methods  -----------------------*/
 
 	public void verify_Register_Page() {
 
@@ -229,7 +227,35 @@ public class LogInPageIndexPage extends AbstractPage {
 
 		common.pause(2);
 
-		String last_name = CreatRandomNames(5);
+		sendData("Enter Last Name: <strong><em>", lastName_text);
+
+		enterRandomMail();
+
+		enterRandomPassword();
+
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		joinNow_button.click();
+
+		common.pause(2);
+
+		loginPageVerfication.verificationMethod(validation_message,
+				"Verification message is verify.");
+
+		common.pause(2);
+
+	}
+
+	public void verify_lastname(String name) {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		String last_name = name;
+
+		sendData("Enter First Name: <strong><em>", firstName_text);
+
+		common.pause(2);
 
 		lastName_text.sendKeys(last_name);
 
@@ -238,22 +264,46 @@ public class LogInPageIndexPage extends AbstractPage {
 
 		common.pause(2);
 
-		String email = createRandommail(7);
+		enterRandomMail();
 
-		emailId_text.sendKeys(email);
+		enterRandomPassword();
 
-		extent.log(LogStatus.INFO, "Enter Emailid : <strong><em>" + email + "");
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		joinNow_button.click();
 
 		common.pause(2);
 
-		String password = CreateRandomPassword();
+		loginPageVerfication.verificationMethod(validation_message,
+				"Verification message is verify.");
 
-		passwd_text.sendKeys(password);
+		common.pause(2);
 
-		extent.log(LogStatus.INFO, "Enter Password : <strong><em>" + password
+	}
+
+	public void verify_emailid(String emailId) {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		String email_id = emailId;
+
+		sendData("Enter First Name: <strong><em>", firstName_text);
+
+		common.pause(2);
+
+		sendData("Enter Last Name: <strong><em>", lastName_text);
+
+		common.pause(2);
+
+		emailId_text.sendKeys(email_id);
+
+		extent.log(LogStatus.INFO, "Enter Emailid : <strong><em>" + email_id
 				+ "");
 
 		common.pause(2);
+
+		enterRandomPassword();
 
 		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
 
@@ -270,6 +320,29 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	/*----------------------- MISC methods of test execution -----------------------*/
 
+	public void sendData(String text, WebElement element) {
+
+		String data = CreatRandomNames(5);
+
+		element.sendKeys(data);
+
+		extent.log(LogStatus.INFO, text + data + "");
+
+		common.pause(2);
+
+	}
+
+	public void enterRandomMail() {
+
+		String email = createRandommail(7);
+
+		emailId_text.sendKeys(email);
+
+		extent.log(LogStatus.INFO, "Enter Emailid : <strong><em>" + email + "");
+
+		common.pause(2);
+	}
+
 	public void sendValuesTextfields() {
 
 		textfields.add(firstName_text);
@@ -285,6 +358,18 @@ public class LogInPageIndexPage extends AbstractPage {
 			common.pause(1);
 
 		}
+	}
+
+	public void enterRandomPassword() {
+
+		String password = CreateRandomPassword();
+
+		passwd_text.sendKeys(password);
+
+		extent.log(LogStatus.INFO, "Enter Password : <strong><em>" + password
+				+ "");
+
+		common.pause(2);
 	}
 
 	public String getValuesTextfields() {
@@ -305,20 +390,6 @@ public class LogInPageIndexPage extends AbstractPage {
 		}
 
 		return value;
-	}
-
-	public void Click(WebElement element) {
-
-		try {
-
-			element.click();
-
-		} catch (Exception e) {
-
-			// e.printStackTrace();
-			extent.log(LogStatus.FAIL, "Click on " + element.getText()
-					+ "failed");
-		}
 	}
 
 	public String createRandommail(int number) {
@@ -345,7 +416,7 @@ public class LogInPageIndexPage extends AbstractPage {
 		String password;
 
 		password = CreatRandomNames(4) + "@"
-				+ common.randomNumericValueGenerate(3);
+				+ common.randomNumericValueGenerate(999);
 
 		return password;
 	}

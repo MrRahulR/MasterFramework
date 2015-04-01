@@ -96,40 +96,32 @@ public class LoginPageIndex extends SeleniumInit {
 
 	}
 
-	/*@Test(dataProvider = "invalidlnames", dataProviderClass = TestData.class)
-	public void invalidLastName(String name, int cases) {
+	@Test(dataProvider = "invalidlnames", dataProviderClass = TestData.class)
+	public void invalidLastName(String name,int row_number) {
 
-		mycommon.log_case("TESTCASE_"
-				+ cases
-				+ " : To verify that Last Name field should have only characters.");
+		row_num = row_number;
 
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
 
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_lastname(currentTest, name);
-
-		mycommon.log_testover();
+		loginPageIndexPage.verify_lastname(name);
 
 	}
 
 	@Test(dataProvider = "invalidmailid", dataProviderClass = TestData.class)
-	public void invalid_emailid(String name, int cases) {
+	public void invalid_emailid(String emailId, int row_number) {
 
-		mycommon.log_case("TESTCASE_" + cases
-				+ " : To verify that user is enter valid emailid.");
+		row_num = row_number;
 
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
 
-		CreateNewAccount_Verification.openURL();
 
-		CreateNewAccount_IndexPage.verify_emailid(currentTest, name);
-
-		mycommon.log_testover();
+		loginPageIndexPage.verify_emailid(emailId);
 
 	}
 
-	@Test(dataProvider = "invalidpassword", dataProviderClass = TestData.class)
+	/*	@Test(dataProvider = "invalidpassword", dataProviderClass = TestData.class)
 	public void invalid_password(String name, int cases) {
 
 		mycommon.log_case("TESTCASE_" + cases
