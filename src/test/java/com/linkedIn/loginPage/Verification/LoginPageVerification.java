@@ -167,28 +167,28 @@ public class LoginPageVerification extends AbstractPage {
 
 	}
 
-	public void datavalidation_success(WebElement validation_message,
-			String VerificationMessage) {
+	public void datavalidation_success() {
 
 		common.pause(2);
 
 		try {
 
-			if (!validation_message.isDisplayed()) {
+			if (driver.getTitle().contains("Largest")) {
 
-				extent.log(LogStatus.PASS, VerificationMessage);
+				extent.log(LogStatus.FAIL, "Error! , User failed to register..");
 				common.pause(2);
 			} else {
 
 				test_result = "failed";
-				extent.log(LogStatus.FAIL, "Error , User failed to register..");
+				extent.log(LogStatus.PASS,
+						"Success! , User registered successfully to LinkedIn.");
 				common.pause(2);
 			}
 
 		} catch (Exception e) {
 
 			test_result = "failed";
-			extent.log(LogStatus.FAIL, "Error , User failed to register..");
+			extent.log(LogStatus.FAIL, "Error! , User failed to register..");
 			common.pause(2);
 
 		}

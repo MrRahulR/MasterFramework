@@ -386,7 +386,7 @@ public class LogInPageIndexPage extends AbstractPage {
 
 		common.pause(2);
 
-		loginPageVerfication.datavalidation_success(validation_message,"User successfully registered with entered data!");
+		loginPageVerfication.datavalidation_success();
 
 		common.pause(2);
 
