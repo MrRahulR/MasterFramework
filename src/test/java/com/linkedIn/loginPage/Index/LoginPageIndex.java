@@ -144,95 +144,76 @@ public class LoginPageIndex extends SeleniumInit {
 
 	}
 
-	/*
-	 * @Test public void tab_functionality() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_40 : To verify that user is see register successful page after enter valid data"
-	 * );
-	 * 
-	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verifyTabKey();
-	 * 
-	 * }
-	 * 
-	 * @Test public void onclick_functionality() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_41 : To verify that user is see register successful page after enter valid data"
-	 * );
-	 * 
-	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verify_onclickfunctionality();
-	 * 
-	 * mycommon.log_testover();
-	 * 
-	 * }
-	 * 
-	 * @Test public void verify_validation_msg() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_42 : To verify that validation message appear properly");
-	 * 
-	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verify_validation();
-	 * 
-	 * mycommon.log_testover();
-	 * 
-	 * }
-	 * 
-	 * @Test public void useragreement_link() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_43 : To verify that User Agreement link is working properly");
-	 * 
-	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verify_ua_link();
-	 * 
-	 * mycommon.log_testover();
-	 * 
-	 * }
-	 * 
-	 * @Test public void privacypolicy_link() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_44 : To verify that Privacy Policy link is working properly");
-	 * 
-	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verify_pp_link();
-	 * 
-	 * mycommon.log_testover();
-	 * 
-	 * }
-	 * 
-	 * @Test public void cookiepolicy_link() {
-	 * 
-	 * mycommon.log_case(
-	 * "TESTCASE_45 : To verify that Cookie Policy link is working properly");
-	 * 
-	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-	 * 
-	 * CreateNewAccount_Verification.openURL();
-	 * 
-	 * CreateNewAccount_IndexPage.verify_cp_link();
-	 * 
-	 * mycommon.log_testover();
-	 * 
-	 * }
-	 */
+	@Test
+	public void tab_functionality() {
+
+		row_num = 52;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verifyTabKeyFunctionality();
+
+	}
+
+	@Test
+	public void onclick_functionality() {
+
+		row_num = 53;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verifyOnclickfunctionality();
+
+	}
+
+	@Test
+	public void verify_validation_msg() {
+
+		row_num = 54;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verify_validationMessage();
+
+	}
+
+	@Test
+	public void useragreement_link() {
+
+		row_num = 55;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verify_ua_link();
+
+	}
+
+	@Test
+	public void privacypolicy_link() {
+
+		row_num = 55;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verify_pp_link();
+
+	}
+
+	@Test
+	public void cookiepolicy_link() {
+
+		row_num = 55;
+
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
+
+		loginPageIndexPage.verify_cp_link();
+
+	}
+
 }

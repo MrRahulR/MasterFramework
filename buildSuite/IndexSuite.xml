@@ -15,8 +15,8 @@
 	
 	<parameter name="project.title" value="LinkedIn-SignIn" />
 
-<!-- 	<test name="Verify_Register_Page">
-	    <parameter name="selenium.browser" value="chrome" />
+	<test name="Verify_Register_Page">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -27,7 +27,7 @@
 	</test>
 
 	<test name="Verify_Label_onPage">
-	    <parameter name="selenium.browser" value="chrome" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -38,7 +38,7 @@
 	</test>
 
 	<test name="Verify_Mendatory_Fields">
-	    <parameter name="selenium.browser" value="chrome" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -48,8 +48,8 @@
 		</classes>
 	</test>
 
- 	<test name="Verify_Button_Functionality">
- 	    <parameter name="selenium.browser" value="chrome" />
+	<test name="Verify_Button_Functionality">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -60,7 +60,7 @@
 	</test>
 
 	<test name="Click_Button_Functionality">
-	    <parameter name="selenium.browser" value="chrome" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -93,7 +93,7 @@
 	</test>
 
 	<test name="Invalid_LastName">
-	<parameter name="selenium.browser" value="chrome" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -114,8 +114,8 @@
 		</classes>
 	</test>
 
- 	<test name="Invalid_Password">
- 		<parameter name="selenium.browser" value="chrome" />
+	<test name="Invalid_Password">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -123,10 +123,10 @@
 				</methods>
 			</class>
 		</classes>
-	</test> -->
+	</test>
 
 	<test name="Register_Success">
-	 	<parameter name="selenium.browser" value="chrome" />
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -136,7 +136,8 @@
 		</classes>
 	</test>
 
-<!--	<test name="Tab_Functionality">
+	<test name="Tab_Functionality">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -147,6 +148,7 @@
 	</test>
 
 	<test name="Onclick_Functionality">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -157,6 +159,7 @@
 	</test>
 
 	<test name="Verify_Validation_Msg">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -167,6 +170,7 @@
 	</test>
 
 	<test name="User_Agreement_Link">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -177,6 +181,7 @@
 	</test>
 
 	<test name="Privacy_Policy_Link">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -187,6 +192,7 @@
 	</test>
 
 	<test name="Cookie_Policy_Link">
+		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -195,5 +201,5 @@
 			</class>
 		</classes>
 	</test>
- -->
+
 </suite>

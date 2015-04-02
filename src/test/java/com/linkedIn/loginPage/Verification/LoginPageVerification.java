@@ -1,10 +1,7 @@
 package com.linkedIn.loginPage.Verification;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import com.linkedIn.init.Common;
 import com.relevantcodes.extentreports.LogStatus;
@@ -13,7 +10,6 @@ public class LoginPageVerification extends AbstractPage {
 
 	public LoginPageVerification(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	Common common = new Common(driver);
@@ -28,141 +24,10 @@ public class LoginPageVerification extends AbstractPage {
 				extent.log(LogStatus.PASS, VerificationMessage);
 			} else {
 				test_result = "failed";
-				extent.log(LogStatus.FAIL, VerificationMessage);
+				extent.log(LogStatus.FAIL, "Verification message isn't verify.");
 			}
 		} catch (Exception e) {
-			extent.log(LogStatus.FAIL, VerificationMessage);
-		}
-
-		/*
-		 * if (!test_result.equals("failed")) { common.log(
-		 * "<h2> <font color=238E23>--<img src=\"passed.png\"/></font> </h2></br></br>"
-		 * ); //common.log("<h2 style=color:red> Test failed </h2>");
-		 * test_result = ""; } else { common.log(
-		 * "<h2><font color=#FF0000>--<img src=\"failed.png\"/></font> </h2></br></br>"
-		 * ); //common.log("<h2 style=color:green> Test Passed </h2>");
-		 * test_result = ""; }
-		 */
-
-	}
-
-	public void verificationMethodEmail(WebElement element,
-			String VerificationMessage) {
-
-		if (common.isElementDisplayed(element)) {
-			common.logverification(VerificationMessage);
-			common.logStatus(PASSED);
-		} else {
-			/* test_result = "failed"; */
-			common.logverification(VerificationMessage);
-			common.logStatus(FAILED);
-		}
-
-		/*
-		 * if (test_result.equals("failed")) {
-		 * 
-		 * common.log("<h2 style=color:red> Test failed </h2>"); test_result =
-		 * ""; } else {
-		 * 
-		 * common.log("<h2 style=color:green> Test Passed </h2>"); test_result =
-		 * ""; }
-		 */
-
-	}
-
-	public void VerificationMethod_List_Last(List<WebElement> elements,
-			String VerificationMessage) {
-
-		if (elements.size() >= 0) {
-
-			for (WebElement element : elements) {
-
-				common.log("<b>Validation Message:- </b>  " + element.getText()
-						+ "</br>");
-
-				common.log("=========================================================================================</br></br>");
-
-			}
-			common.logverification(VerificationMessage);
-			common.logStatus(PASSED);
-		} else {
-			/* test_result = "failed"; */
-			common.logverification(VerificationMessage);
-			common.logStatus(FAILED);
-		}
-
-		/*
-		 * if (test_result.equals("failed")) {
-		 * 
-		 * common.log("<h2 style=color:red> Test failed </h2>"); test_result =
-		 * ""; } else {
-		 * 
-		 * common.log("<h2 style=color:green> Test Passed </h2>"); test_result =
-		 * ""; }
-		 */
-	}
-
-	public void verificationNotNull(WebElement element, String Tabname) {
-		common.pause(1);
-		if (element.getText().equals(null)) {
-			common.log("data not selected for " + Tabname);
-			common.logStatus(FAILED);
-		} else {
-			common.log("data selected Successfully  for " + Tabname);
-			common.logStatus(PASSED);
-		}
-	}
-
-	public void verifytextbox(WebElement element, String tocompare, String msg) {
-		if (tocompare.equals(element.getAttribute("value"))) {
-			common.logverification(msg);
-			common.logStatus(PASSED);
-		} else {
-			// System.out.println(tocompare+" == "+element.getAttribute("value"));
-			common.logverification(msg);
-			common.logStatus(FAILED);
-		}
-	}
-
-	public void verifyselecteddata(String selected, String toverify,
-			String tabname) {
-		System.out.println(selected + " == " + toverify);
-		if (selected.equals(toverify)) {
-			common.logverification("Selected Data is present on " + tabname
-					+ " tab");
-			common.logStatus(PASSED);
-		} else {
-			common.logverification("Selected Data is not present on " + tabname
-					+ " tab");
-			common.logStatus(FAILED);
-		}
-
-	}
-
-	/*--------------------------VERIFICATION METHOD------------------------------------------------------------------*/
-
-	public void verificationMethod(WebElement element, String element_name,
-			String element_type, String page_name) {
-
-		/*
-		 * Actions move_to_element=new Actions(driver);
-		 * move_to_element.moveToElement(element).build().perform();
-		 * common.pause(3);
-		 */
-
-		if (common.isElementDisplayed(element)) {
-
-			common.log("'" + element_name + "' " + element_type
-					+ " verification on " + page_name
-					+ " page. <h3 style=color:green>PASSED</h3>");
-			Assert.assertTrue(true);
-		} else {
-
-			common.log("'" + element_name + "' " + element_type
-					+ " verification on " + page_name
-					+ " page. <h3 style=color:red>FAILED</h3>");
-
-			Assert.assertTrue(false);
+			extent.log(LogStatus.FAIL, "Verification message is verify.");
 		}
 
 	}
@@ -195,6 +60,140 @@ public class LoginPageVerification extends AbstractPage {
 
 	}
 
-	/*------------------------------------------------------------------------------------------------------------------------*/
+	public void onclick_verify() {
+
+		common.pause(2);
+
+		try {
+
+			if (driver.getTitle().contains("Largest")) {
+
+				extent.log(LogStatus.FAIL, "Error! , User failed to register..");
+				common.pause(2);
+			} else {
+
+				test_result = "failed";
+				extent.log(LogStatus.PASS,
+						"Success! , User registered successfully to LinkedIn.");
+				common.pause(2);
+			}
+
+		} catch (Exception e) {
+
+			test_result = "failed";
+			extent.log(LogStatus.FAIL, "Error! , User failed to register..");
+			common.pause(2);
+
+		}
+
+	}
+
+	public void verifyValidationMessage(WebElement element) {
+
+		try {
+			if (element.isDisplayed()) {
+				extent.log(LogStatus.PASS,
+						"Validation message is display properly");
+			} else {
+				test_result = "failed";
+				extent.log(LogStatus.FAIL,
+						"Validation message isn't display properly");
+			}
+		} catch (Exception e) {
+			extent.log(LogStatus.FAIL,
+					"Validation message isn't display properly");
+		}
+
+	}
+
+	public void verify_ua() {
+
+		common.pause(2);
+
+		try {
+
+			if (driver.getTitle().contains("User Agreement")) {
+
+				extent.log(LogStatus.PASS,
+						"User Agreement link is working properly");
+				common.pause(2);
+			} else {
+
+				test_result = "failed";
+				extent.log(LogStatus.FAIL,
+						"User Agreement link isn't working properly");
+				common.pause(2);
+			}
+
+		} catch (Exception e) {
+
+			test_result = "failed";
+			extent.log(LogStatus.FAIL,
+					"User Agreement link isn't working properly");
+			common.pause(2);
+
+		}
+
+	}
+
+	public void verify_pp() {
+
+		common.pause(2);
+
+		try {
+
+			if (driver.getTitle().contains("Privacy Policy")) {
+
+				extent.log(LogStatus.PASS,
+						"Privacy Policy link is working properly");
+				common.pause(2);
+			} else {
+
+				test_result = "failed";
+				extent.log(LogStatus.FAIL,
+						"Privacy Policy link isn't working properly");
+				common.pause(2);
+			}
+
+		} catch (Exception e) {
+
+			test_result = "failed";
+			extent.log(LogStatus.FAIL,
+					"Privacy Policy link isn't working properly");
+			common.pause(2);
+
+		}
+
+	}
+
+	public void verify_cp() {
+
+		common.pause(2);
+
+		try {
+
+			if (driver.getTitle().contains("Cookie Policy")) {
+
+				extent.log(LogStatus.PASS,
+						"Cookie Policy link is working properly");
+				common.pause(2);
+			} else {
+
+				test_result = "failed";
+				extent.log(LogStatus.FAIL,
+						"Cookie Policy link isn't working properly");
+				common.pause(2);
+			}
+
+		} catch (Exception e) {
+
+			test_result = "failed";
+			extent.log(LogStatus.FAIL,
+					"Cookie Policy link isn't working properly");
+			common.pause(2);
+
+		}
+
+	}
 
 }

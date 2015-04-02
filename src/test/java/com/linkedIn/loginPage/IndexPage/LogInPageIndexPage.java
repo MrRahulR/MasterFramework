@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.apache.commons.lang.RandomStringUtils;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +52,21 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	@FindBy(xpath = ".//*[@id='global-error']/div")
 	private WebElement validation_message;
+
+	@FindBy(xpath = ".//*[@id='session_key-login']")
+	private WebElement loginEmailId_text;
+
+	@FindBy(xpath = ".//*[@id='session_password-login']")
+	private WebElement loginPassword_text;
+
+	@FindBy(xpath = ".//*[@id='guest-home-reg-form']/fieldset/div/p[1]/a[1]")
+	private WebElement userAgreement_link;
+
+	@FindBy(xpath = ".//*[@id='guest-home-reg-form']/fieldset/div/p[1]/a[2]")
+	private WebElement privacyPolicy_link;
+
+	@FindBy(xpath = ".//*[@id='guest-home-reg-form']/fieldset/div/p[1]/a[3]")
+	private WebElement cookiePolicy_link;
 
 	List<WebElement> textfields = new ArrayList<WebElement>();
 
@@ -392,9 +408,151 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	}
 
+	public void verifyTabKeyFunctionality() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		common.pause(2);
+
+		loginEmailId_text.sendKeys("pandya.rahul00@gmail.com");
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, "Press \"Tab\" key on keyboard");
+
+		loginEmailId_text.sendKeys(Keys.TAB);
+
+		common.pause(1);
+	}
+
+	public void verifyOnclickfunctionality() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		sendData("Enter First Name: <strong><em>", firstName_text);
+
+		common.pause(2);
+
+		sendData("Enter Last Name: <strong><em>", lastName_text);
+
+		common.pause(2);
+
+		enterRandomMail();
+
+		common.pause(2);
+
+		common.highlightsElement(passwd_text);
+
+		enterRandomPassword();
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, "Step 6 : Click \"Enter\" in your keyboard");
+
+		passwd_text.sendKeys(Keys.ENTER);
+
+		common.pause(2);
+
+		loginPageVerfication.onclick_verify();
+
+		common.pause(2);
+	}
+
+	public void verify_validationMessage() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		common.pause(1);
+
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		common.pause(2);
+
+		try {
+			joinNow_button.click();
+		} catch (NoSuchElementException nse) {
+
+		}
+
+		common.pause(2);
+
+		loginPageVerfication.verifyValidationMessage(validation_message);
+
+		common.pause(1);
+
+	}
+
+	public void verify_ua_link() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, "Click on \"User Agreement\" link");
+
+		common.pause(2);
+		
+		common.highlightsElement(userAgreement_link);
+
+		userAgreement_link.click();
+
+		loginPageVerfication.verify_ua();
+
+		common.pause(2);
+
+	}
+
+	public void verify_pp_link() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, "Click on \"Privacy Policy\" link");
+
+		common.pause(2);
+		
+		common.highlightsElement(privacyPolicy_link);
+
+		privacyPolicy_link.click();
+
+		loginPageVerfication.verify_pp();
+
+		common.pause(2);
+
+	}
+
+	public void verify_cp_link() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, "Click on \"Cookie Policy\" link");
+
+		common.pause(2);
+		
+		common.highlightsElement(cookiePolicy_link);
+
+		cookiePolicy_link.click();
+
+		loginPageVerfication.verify_cp();
+
+		common.pause(2);
+
+	}
+
 	/*----------------------- MISC methods of test execution -----------------------*/
 
 	public void sendData(String text, WebElement element) {
+
+		common.highlightsElement(element);
 
 		String data = CreatRandomNames(5);
 

@@ -916,7 +916,7 @@ public class Common {
 
 	public void logstep(String msg) {
 
-		Reporter.log("<strong><u>" + msg + "</u></strong></br>");
+		Reporter.log("<strong><u>" + msg + "</u></strong></br><br>");
 
 	}
 

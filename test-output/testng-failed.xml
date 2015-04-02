@@ -2,22 +2,315 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" verbose="10" name="Failed suite [suite]">
   <parameter name="selenium.url" value="http://www.linkedin.com"/>
+  <parameter name="selenium.browser" value="chrome"/>
   <parameter name="workbook.path" value="XSLS\LinkedIn_Test_Cases.xlsx"/>
   <parameter name="project.title" value="LinkedIn-SignIn"/>
   <parameter name="selenium.port" value="4444"/>
   <parameter name="testsheet.name" value="SignIn"/>
   <parameter name="selenium.host" value="localhost"/>
-  <test name="Register_Success(failed)">
+  <test name="Onclick_Functionality(failed)">
     <classes>
       <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
         <methods>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="register_success"/>
-          <include name="tearDown"/>
-          <include name="getTestInfo"/>
           <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="onclick_functionality"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="getTestInfo"/>
         </methods>
       </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
     </classes>
-  </test> <!-- Register_Success(failed) -->
+  </test> <!-- Onclick_Functionality(failed) -->
+  <test name="Verify_Validation_Msg(failed)">
+    <classes>
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="verify_validation_msg"/>
+          <include name="getTestInfo"/>
+        </methods>
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </classes>
+  </test> <!-- Verify_Validation_Msg(failed) -->
+  <test name="User_Agreement_Link(failed)">
+    <classes>
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="useragreement_link"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="getTestInfo"/>
+        </methods>
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </classes>
+  </test> <!-- User_Agreement_Link(failed) -->
+  <test name="Privacy_Policy_Link(failed)">
+    <classes>
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="privacypolicy_link"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="getTestInfo"/>
+        </methods>
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </classes>
+  </test> <!-- Privacy_Policy_Link(failed) -->
+  <test name="Cookie_Policy_Link(failed)">
+    <classes>
+      <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="cookiepolicy_link"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="getTestInfo"/>
+        </methods>
+      </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
+    </classes>
+  </test> <!-- Cookie_Policy_Link(failed) -->
 </suite> <!-- Failed suite [suite] -->
