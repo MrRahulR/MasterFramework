@@ -2,44 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" verbose="10" name="Failed suite [suite]">
   <parameter name="selenium.url" value="http://www.linkedin.com"/>
-  <parameter name="selenium.browser" value="chrome"/>
   <parameter name="workbook.path" value="XSLS\LinkedIn_Test_Cases.xlsx"/>
   <parameter name="project.title" value="LinkedIn-SignIn"/>
   <parameter name="selenium.port" value="4444"/>
   <parameter name="testsheet.name" value="SignIn"/>
   <parameter name="selenium.host" value="localhost"/>
-  <test name="Invalid_LastName(failed)">
+  <test name="Register_Success(failed)">
     <classes>
       <class name="com.linkedIn.loginPage.Index.LoginPageIndex">
         <methods>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
           <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
-          <include name="fetchSuiteConfiguration"/>
+          <include name="register_success"/>
+          <include name="tearDown"/>
           <include name="getTestInfo"/>
-          <include name="invalidLastName"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.linkedIn.loginPage.Index.LoginPageIndex -->
     </classes>
-  </test> <!-- Invalid_LastName(failed) -->
+  </test> <!-- Register_Success(failed) -->
 </suite> <!-- Failed suite [suite] -->

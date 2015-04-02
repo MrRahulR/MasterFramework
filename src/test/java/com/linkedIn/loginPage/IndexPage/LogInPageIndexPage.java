@@ -318,6 +318,80 @@ public class LogInPageIndexPage extends AbstractPage {
 
 	}
 
+	public void verify_password(String password) {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		String Password = password;
+
+		sendData("Enter First Name: <strong><em>", firstName_text);
+
+		common.pause(2);
+
+		sendData("Enter Last Name: <strong><em>", lastName_text);
+
+		common.pause(2);
+
+		enterRandomMail();
+
+		common.highlightsElement(passwd_text);
+
+		extent.log(LogStatus.INFO, "Enter Password : <strong><em>" + Password
+				+ "");
+
+		passwd_text.sendKeys(Password);
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		joinNow_button.click();
+
+		common.pause(2);
+
+		loginPageVerfication.verificationMethod(validation_message,
+				"Verification message is verify.");
+
+		common.pause(2);
+
+	}
+
+	public void verify_with_validData() {
+
+		extent.log(LogStatus.INFO,
+				"<a href=\"http://www.linkedin.com\"> Open URL </a>");
+
+		sendData("Enter First Name: <strong><em>", firstName_text);
+
+		common.pause(2);
+
+		sendData("Enter Last Name: <strong><em>", lastName_text);
+
+		common.pause(2);
+
+		enterRandomMail();
+
+		common.pause(2);
+
+		common.highlightsElement(passwd_text);
+
+		enterRandomPassword();
+
+		common.pause(2);
+
+		extent.log(LogStatus.INFO, " Click \"Join Now\" button");
+
+		joinNow_button.click();
+
+		common.pause(2);
+
+		loginPageVerfication.datavalidation_success(validation_message,"User successfully registered with entered data!");
+
+		common.pause(2);
+
+	}
+
 	/*----------------------- MISC methods of test execution -----------------------*/
 
 	public void sendData(String text, WebElement element) {
@@ -420,4 +494,5 @@ public class LogInPageIndexPage extends AbstractPage {
 
 		return password;
 	}
+
 }

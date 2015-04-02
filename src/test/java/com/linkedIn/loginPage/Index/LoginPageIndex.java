@@ -85,8 +85,8 @@ public class LoginPageIndex extends SeleniumInit {
 	}
 
 	@Test(dataProvider = "invalidnames", dataProviderClass = TestData.class)
-	public void invalidFirstname(String name,int row_number) {
-		
+	public void invalidFirstname(String name, int row_number) {
+
 		row_num = row_number;
 
 		extent.startTest(common.getTestDetails(row_num, 0) + ": "
@@ -97,7 +97,7 @@ public class LoginPageIndex extends SeleniumInit {
 	}
 
 	@Test(dataProvider = "invalidlnames", dataProviderClass = TestData.class)
-	public void invalidLastName(String name,int row_number) {
+	public void invalidLastName(String name, int row_number) {
 
 		row_num = row_number;
 
@@ -116,128 +116,123 @@ public class LoginPageIndex extends SeleniumInit {
 		extent.startTest(common.getTestDetails(row_num, 0) + ": "
 				+ common.getTestDetails(row_num, 1));
 
-
 		loginPageIndexPage.verify_emailid(emailId);
 
 	}
 
-	/*	@Test(dataProvider = "invalidpassword", dataProviderClass = TestData.class)
-	public void invalid_password(String name, int cases) {
+	@Test(dataProvider = "invalidpassword", dataProviderClass = TestData.class)
+	public void invalid_password(String password, int row_number) {
 
-		mycommon.log_case("TESTCASE_" + cases
-				+ " : To verify that user is enter valid Password.");
+		row_num = row_number;
 
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
 
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_password(currentTest, name);
-
-		mycommon.log_testover();
+		loginPageIndexPage.verify_password(password);
 
 	}
 
 	@Test
 	public void register_success() {
 
-		mycommon.log_case("TESTCASE_39 : To verify that user is see register successful page after enter valid data");
+		row_num = 51;
 
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+		extent.startTest(common.getTestDetails(row_num, 0) + ": "
+				+ common.getTestDetails(row_num, 1));
 
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.validdata();
-
-		mycommon.log_testover();
+		loginPageIndexPage.verify_with_validData();
 
 	}
 
-	@Test
-	public void tab_functionality() {
-
-		mycommon.log_case("TESTCASE_40 : To verify that user is see register successful page after enter valid data");
-
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verifyTabKey();
-
-	}
-
-	@Test
-	public void onclick_functionality() {
-
-		mycommon.log_case("TESTCASE_41 : To verify that user is see register successful page after enter valid data");
-
-		mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_onclickfunctionality();
-
-		mycommon.log_testover();
-
-	}
-
-	@Test
-	public void verify_validation_msg() {
-
-		mycommon.log_case("TESTCASE_42 : To verify that validation message appear properly");
-
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_validation();
-
-		mycommon.log_testover();
-
-	}
-
-	@Test
-	public void useragreement_link() {
-
-		mycommon.log_case("TESTCASE_43 : To verify that User Agreement link is working properly");
-
-		mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_ua_link();
-
-		mycommon.log_testover();
-
-	}
-
-	@Test
-	public void privacypolicy_link() {
-
-		mycommon.log_case("TESTCASE_44 : To verify that Privacy Policy link is working properly");
-
-		mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_pp_link();
-
-		mycommon.log_testover();
-
-	}
-
-	@Test
-	public void cookiepolicy_link() {
-
-		mycommon.log_case("TESTCASE_45 : To verify that Cookie Policy link is working properly");
-
-		mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
-
-		CreateNewAccount_Verification.openURL();
-
-		CreateNewAccount_IndexPage.verify_cp_link();
-
-		mycommon.log_testover();
-
-	}
-*/
+	/*
+	 * @Test public void tab_functionality() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_40 : To verify that user is see register successful page after enter valid data"
+	 * );
+	 * 
+	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verifyTabKey();
+	 * 
+	 * }
+	 * 
+	 * @Test public void onclick_functionality() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_41 : To verify that user is see register successful page after enter valid data"
+	 * );
+	 * 
+	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verify_onclickfunctionality();
+	 * 
+	 * mycommon.log_testover();
+	 * 
+	 * }
+	 * 
+	 * @Test public void verify_validation_msg() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_42 : To verify that validation message appear properly");
+	 * 
+	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verify_validation();
+	 * 
+	 * mycommon.log_testover();
+	 * 
+	 * }
+	 * 
+	 * @Test public void useragreement_link() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_43 : To verify that User Agreement link is working properly");
+	 * 
+	 * mycommon.log_step(" Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verify_ua_link();
+	 * 
+	 * mycommon.log_testover();
+	 * 
+	 * }
+	 * 
+	 * @Test public void privacypolicy_link() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_44 : To verify that Privacy Policy link is working properly");
+	 * 
+	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verify_pp_link();
+	 * 
+	 * mycommon.log_testover();
+	 * 
+	 * }
+	 * 
+	 * @Test public void cookiepolicy_link() {
+	 * 
+	 * mycommon.log_case(
+	 * "TESTCASE_45 : To verify that Cookie Policy link is working properly");
+	 * 
+	 * mycommon.log_step("Step 1 : Open URL (http://www.linkedin.com) ");
+	 * 
+	 * CreateNewAccount_Verification.openURL();
+	 * 
+	 * CreateNewAccount_IndexPage.verify_cp_link();
+	 * 
+	 * mycommon.log_testover();
+	 * 
+	 * }
+	 */
 }

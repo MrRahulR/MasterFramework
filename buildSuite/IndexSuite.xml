@@ -15,7 +15,7 @@
 	
 	<parameter name="project.title" value="LinkedIn-SignIn" />
 
-	<test name="Verify_Register_Page">
+<!-- 	<test name="Verify_Register_Page">
 	    <parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
@@ -114,7 +114,8 @@
 		</classes>
 	</test>
 
-<!-- 	<test name="Invalid_Password">
+ 	<test name="Invalid_Password">
+ 		<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -122,9 +123,10 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> -->
 
 	<test name="Register_Success">
+	 	<parameter name="selenium.browser" value="chrome" />
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>
@@ -134,7 +136,7 @@
 		</classes>
 	</test>
 
-	<test name="Tab_Functionality">
+<!--	<test name="Tab_Functionality">
 		<classes>
 			<class name="com.linkedIn.loginPage.Index.LoginPageIndex">
 				<methods>

@@ -167,6 +167,34 @@ public class LoginPageVerification extends AbstractPage {
 
 	}
 
+	public void datavalidation_success(WebElement validation_message,
+			String VerificationMessage) {
+
+		common.pause(2);
+
+		try {
+
+			if (!validation_message.isDisplayed()) {
+
+				extent.log(LogStatus.PASS, VerificationMessage);
+				common.pause(2);
+			} else {
+
+				test_result = "failed";
+				extent.log(LogStatus.FAIL, "Error , User failed to register..");
+				common.pause(2);
+			}
+
+		} catch (Exception e) {
+
+			test_result = "failed";
+			extent.log(LogStatus.FAIL, "Error , User failed to register..");
+			common.pause(2);
+
+		}
+
+	}
+
 	/*------------------------------------------------------------------------------------------------------------------------*/
 
 }
