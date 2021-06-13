@@ -19,7 +19,7 @@
 		<version.ant.javamail>1.8.1</version.ant.javamail>
 		<version.activation>1.1</version.activation>
 		<version.commons.cli>1.2</version.commons.cli>
-		<version.poi>3.7</version.poi>
+		<version.poi>3.17</version.poi>
 		<version.httpclient>4.2.1</version.httpclient>
 		<version.logback>1.2.0</version.logback>
 		<version.velocity>1.5</version.velocity>
